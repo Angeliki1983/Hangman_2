@@ -6,6 +6,7 @@ word = random.choice(word_list)
 
 print(word)
 
+def check_guess(guess):#Task2/Step1
 
 while True:
     guess = input("Enter a single character: ")

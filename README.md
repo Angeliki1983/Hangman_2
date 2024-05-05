@@ -7,7 +7,7 @@ This project is part of an exercise in AI Core designed to help learners practic
 # Table of Contents:
 
 Overview of Hangman Game
-Hangman is a classic word-guessing game where one player thinks of a word and the other player attempts to guess it within a limited number of tries. The player has to guess letters in the word, and every incorrect guess results in a part of the hangman being drawn. The game continues until the word is guessed correctly, or the full hangman is drawn.
+Hangman is a classic word-guessing game where one player thinks of a word and the other player attempts to guess it within a limited number of tries.
 
 # Technologies Used:
 - Python

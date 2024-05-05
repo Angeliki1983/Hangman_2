@@ -7,7 +7,7 @@ word = random.choice(word_list)
 print(word)
 
 def check_guess(guess):#Task2/Step1
-
+    guess = guess.lower()# Task2/Step2
 while True:
     guess = input("Enter a single character: ")
 

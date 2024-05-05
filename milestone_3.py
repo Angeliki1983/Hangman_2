@@ -26,6 +26,8 @@ def ask_for_input():
 
     check_guess(guess) #Milestone 3/step 3
 
+ask_for_input()
+
 
 
     

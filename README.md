@@ -22,7 +22,7 @@ Hangman is a classic word-guessing game where one player thinks of a word and th
 
 # What I ve learned/revised:
 
-## Milestone 1 & 2:
+## Milestone 1 & 2 & 3 :
 
 - Import module random -->Function that is used to generate random items form sequences , with dot operator to acces its functions.In this case we used random.choice function that selects a random item form the sequence of favourite fruits.
 - input() function-->that takes input from the screen, returning the input in form of a string

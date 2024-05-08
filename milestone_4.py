@@ -29,7 +29,7 @@ class Hangman:
         self.num_letters = len(set(self.word))#3
         self.num_lives = num_lives #4
         self.word_list = word_list
-        list_of_guesses = []
+        self.list_of_guesses = []
 
 #milestone 4/Task 2/Step 1
 
@@ -38,7 +38,17 @@ class Hangman:
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
 
+    def ask_for_input(self):#Task 2/Step 2
+        while True:#1
+            guess = input("Guess a letter: ")#2
+            if len(guess) != 1 or guess != guess.isalpha():#3
+                print("Invalid letter. Please, enter a single alphabetical character.")#4
+            elif guess in self.list_of_guesses:#5
+                print("You've already tried that letter!")
 
+
+
+    
 
 
 word_list = ["apple", "banana","cherry","kiwi", "orange"]

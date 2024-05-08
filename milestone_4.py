@@ -1,11 +1,5 @@
 import random
 
-word_list = ["apple", "banana","cherry","kiwi", "orange"]
-
-word = random.choice(word_list)
-
-print(word)
-
 # def check_guess(guess):
 #     guess = guess.lower()
 
@@ -36,3 +30,19 @@ class Hangman:
         self.num_lives = num_lives #4
         self.word_list = word_list
         list_of_guesses = []
+
+#milestone 4/Task 2/Step 1
+
+    def check_guess(self,guess):
+        guess = guess.lower()
+        if guess in self.word:
+            print(f"Good guess! {guess} is in the word.")
+
+
+
+
+word_list = ["apple", "banana","cherry","kiwi", "orange"]
+
+word = random.choice(word_list)
+
+print(word)

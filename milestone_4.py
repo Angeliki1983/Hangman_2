@@ -41,12 +41,15 @@ class Hangman:
     def ask_for_input(self):#Task 2/Step 2
         while True:#1
             guess = input("Guess a letter: ")#2
-            if len(guess) != 1 or guess != guess.isalpha():#3
+            if len(guess) == 1 or not guess.isalpha():#3
                 print("Invalid letter. Please, enter a single alphabetical character.")#4
             elif guess in self.list_of_guesses:#5
                 print("You've already tried that letter!")#6
+            else:
+                self.list_of_guesses.append(guess) #add guess to the list of guesses
+                self.check_guess(guess)
 
-
+    ask_for_input()
 
     
 

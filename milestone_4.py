@@ -49,7 +49,9 @@ class Hangman:
                 self.list_of_guesses.append(guess) #add guess to the list of guesses
                 self.check_guess(guess)
 
-    ask_for_input()
+#test game
+Hangman_game = Hangman("apple")
+Hangman_game.ask_for_input() #calling ask_for_input_function to start the game
 
     
 

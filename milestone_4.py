@@ -2,7 +2,7 @@ import random
 class Hangman:
     def __init__(self, word_list, num_lives=5):#Mileston4/Task1/Step1,2,3
         self.word = random.choice(word_list) #1
-        self.word_guessed = "_" * len(self.word) #2
+        self.word_guessed = ["_" for _ in self.word ]#2
         self.num_letters = len(set(self.word))#3
         self.num_lives = num_lives #4
         self.word_list = word_list
@@ -15,7 +15,7 @@ class Hangman:
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
             #iterate over each index and letter in the word:
-            for i, letter in enumerate(self.word)
+            for i, letter in enumerate(self.word): # or for i in range(len(self.word))???
                 if self.word[i] == guess:
                     
 

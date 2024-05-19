@@ -17,6 +17,7 @@ class Hangman:
             #iterate over each index and letter in the word:
             for i, letter in enumerate(self.word): # or for i in range(len(self.word))???
                 if self.word[i] == guess:
+                    #updating word_guessd_list with the correctly guessed letter
                     
 
 

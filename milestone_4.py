@@ -16,8 +16,8 @@ class Hangman:
             print(f"Good guess! {guess} is in the word.")
             #iterate over each index and letter in the word:
             for i, letter in enumerate(self.word): # or for i in range(len(self.word))???
+            #updating word_guessd_list with the correctly guessed letter
                 if self.word[i] == guess:
-                    #updating word_guessd_list with the correctly guessed letter
                     
 
 

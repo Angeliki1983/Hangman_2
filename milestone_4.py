@@ -19,7 +19,7 @@ class Hangman:
                 if letter == guess:#if the current letter matches the guessed letter
                 #updating word_guessd_list with the correctly guessed letter
                     self.word_guessed[i] =guess ## Replace the corresponding "_" in word_guessed with the guessed letter
-            self.num_letters -= 1 #decrease the number of guessed letters left to guess
+            self.num_letters -= 1 #decrease the number of guessed letters left to guess/reduce the variable num_letters by 1
 
                     
 

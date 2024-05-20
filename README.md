@@ -71,3 +71,18 @@ This line checks if the current "letter" is the same as the guess(the letter gue
 Step 3 in this task has been a challenge. Task requires to creat an if block that replaces the corresponding "_" in the word_guessed with the guess. The hint exercise is providing was very helpful-->Indexing the word_guessed at the position of the letter and assign it to the letter.
 
 --->self.word_guessed[i] = guess : If "letter" matches "guess" means that the guessed letter is in the word at the position "i".Then update the self.word_guessed list at the index "i" to reveal the correctly guessed letter.
+
+## EXAMPLE:
+Assuming that the random word generated is "apple" and the user guess is "p".
+
+The loop (enumerate()) iterates over each letter in "apple":
+
+- i = 0 -->letter = "a" (no match)
+- i = 1 -->letter = "p" (match)
+- i = 2 -->letter = "p" (match)
+- i = 3 -->letter = "l" (no match)
+- i = 4 -->letter = "e" (no match)
+
+Condition : if letter == guess is True for indices i =1 and i = 2. The guessed letter "p" then is revealed in self.word_guessed at position 1 and 2.
+
+

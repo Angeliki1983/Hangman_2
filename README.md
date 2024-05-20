@@ -68,7 +68,7 @@ After we iterate over each letter in self.word where "i" is the index and and le
 
 This line checks if the current "letter" is the same as the guess(the letter guess by the player)
 
-Step 3 in this task has been a challenge. Task requires to creat an if block that replaces the corresponding "_" in the word_guessed with the guess. The hint exercise is providing was very helpful-->Indexing the word_guessed at the position of the letter and assign it to the letter.
+This part of the task has been a challenge. We are required to create an if block that replaces the corresponding "_" in the word_guessed with the guess. The hint provided proved out to be ery helpful--> Indexing the word_guessed at the position of the letter and assign it to the letter.(which is the users guess)
 
 --->self.word_guessed[i] = guess : If "letter" matches "guess" means that the guessed letter is in the word at the position "i".Then update the self.word_guessed list at the index "i" to reveal the correctly guessed letter.
 

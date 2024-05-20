@@ -40,7 +40,7 @@ Hangman is a classic word-guessing game where one player thinks of a word and th
 - Calling functions in this case ask_for_input() and check_guess -->contains the main logic of the game prompting the user for input and cheking their guesses
 
 ## Milestone 4:
-<b>Task 3/Step 1</b>: asks us to create το loop through each letter in the word.In this case I used enumerate() built in function which allow us to loop over the iterable and have an automatic counter.It will return both the index and the value of the character in the list.
+<b>Task 3/Part 1</b>: asks us to create το loop through each letter in the word.In this case I used enumerate() built in function which allow us to loop over the iterable and have an automatic counter.It will return both the index and the value of the character in the list.
 
 Using enumerate function we check each letter in the word to see if it matches the guessed letter.If it matches we need to update the corresponsing position in the 'word_guessed" hence why we need the index of the current letter(So that we know where to update the word_guessed) and the letter itself(to check if it matches the guessed letter).
 
@@ -56,7 +56,7 @@ example:
 
 With enumerate we can easily check if the "letter" is equal to "guess" and use "i" to update self.word_guessed at the current position.
 
-<b>Step2:</b>
+<b>Part 2:</b>
 Tasks requires to create an if statement that checks if the letter is equal to "guess".
 
 After we iterate over each letter in self.word where "i" is the index and and letter is the actual characterof that index using the enumerate function, we check if the current letter matches the guessed letter.
@@ -68,7 +68,7 @@ After we iterate over each letter in self.word where "i" is the index and and le
 
 This line checks if the current "letter" is the same as the guess(the letter guess by the player)
 
-This part of the task has been a challenge. We are required to create an if block that replaces the corresponding "_" in the word_guessed with the guess. The hint provided proved out to be ery helpful--> Indexing the word_guessed at the position of the letter and assign it to the letter.(which is the users guess)
+<b>Part 3</b> This part of the task has been a challenge. We are required to create an if block that replaces the corresponding "_" in the word_guessed with the guess. The hint provided proved out to be ery helpful--> Indexing the word_guessed at the position of the letter and assign it to the letter.(which is the users guess)
 
 --->self.word_guessed[i] = guess : If "letter" matches "guess" means that the guessed letter is in the word at the position "i".Then update the self.word_guessed list at the index "i" to reveal the correctly guessed letter.
 
@@ -84,5 +84,7 @@ The loop (enumerate()) iterates over each letter in "apple":
 - i = 4 -->letter = "e" (no match)
 
 Condition : if letter == guess is True for indices i =1 and i = 2. The guessed letter "p" then is revealed in self.word_guessed at position 1 and 2.
+
+
 
 

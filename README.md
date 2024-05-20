@@ -38,3 +38,30 @@ Hangman is a classic word-guessing game where one player thinks of a word and th
 - String manipulation:Converting strings into lower case using lower() method
 - Gaining familiarity with common programming constructs
 - Calling functions in this case ask_for_input() and check_guess -->contains the main logic of the game prompting the user for input and cheking their guesses
+
+## Milestone 4:
+<b>Task 3/Step 1</b>: asks us to create το loop through each letter in the word.In this case I used enumerate() built in function which allow us to loop over the iterable and have an automatic counter.It will return both the index and the value of the character in the list.
+
+Using enumerate function we check each letter in the word to see if it matches the guessed letter.If it matches we need to update the corresponsing position in the 'word_guessed" hence why we need the index of the current letter(So that we know where to update the word_guessed) and the letter itself(to check if it matches the guessed letter).
+
+for i, letter in enumerate(self.word)--->This line starts the loop where "i" will be the index and "letter" will be the actual character the user guesses at the index in self.word.
+
+--->enumerate(self.word) -->This provides both index and letter for each iteration
+example:
+
+- First iteration "i" index is 0 LETTER is "a"
+- Second iteration "i" index is 1 letter is "p"
+- third iteration "i" index is 2 letter is "p"
+- etc
+
+With enumerate we can easily check if the "letter" is equal to "guess" and use "i" to update self.word_guessed at the current position.
+
+<b>Step2:</b>
+Tasks requires to create an if statement that checks if the letter is equal to "guess".
+
+After we iterate over each letter in self.word where "i" is the index and and letter is the actual characterof that index using the enumerate function, we check if the current letter matches the guessed letter.
+
+- letter --> is the character in the owrd at the current index "i"
+- guess --> is the letter that the player guessed
+
+This line checks if the current "letter" is the same as the guess(the letter guess by the player)

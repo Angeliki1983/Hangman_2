@@ -61,7 +61,13 @@ Tasks requires to create an if statement that checks if the letter is equal to "
 
 After we iterate over each letter in self.word where "i" is the index and and letter is the actual characterof that index using the enumerate function, we check if the current letter matches the guessed letter.
 
-- letter --> is the character in the owrd at the current index "i"
+---->if letter == guess: 
+
+- letter --> is the character in the word at the current index "i"
 - guess --> is the letter that the player guessed
 
 This line checks if the current "letter" is the same as the guess(the letter guess by the player)
+
+Step 3 in this task has been a challenge. Task requires to creat an if block that replaces the corresponding "_" in the word_guessed with the guess. The hint exercise is providing was very helpful-->Indexing the word_guessed at the position of the letter and assign it to the letter.
+
+--->self.word_guessed[i] = guess : If "letter" matches "guess" means that the guessed letter is in the word at the position "i".Then update the self.word_guessed list at the index "i" to reveal the correctly guessed letter.

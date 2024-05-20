@@ -22,8 +22,6 @@ class Hangman:
             self.num_letters -= 1 #decrease the number of guessed letters left to guess/reduce the variable num_letters by 1
             print("Word guessed so far:", " ".join(self.word_guessed))#print current state of word guessed so far/visual feedback
 
-                    
-
 
     def ask_for_input(self):#Task 2/Step 2
         while True:#1
@@ -39,7 +37,7 @@ class Hangman:
 #test game
 word_list = ["apple", "banana","cherry","kiwi", "orange"]
 
-Hangman_game = Hangman("apple")
+Hangman_game = Hangman(word_list)
 Hangman_game.ask_for_input() #calling ask_for_input_function to start the game
 
     

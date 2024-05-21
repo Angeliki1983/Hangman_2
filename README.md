@@ -116,7 +116,17 @@ Before this line, self.num_letters was 4, after this line self.num_letters becom
 
 #### When self.num_letters reaches 0 , means that the player has guessed all unique letters in the word and the user has won the game.
 
+## Showing current state of the word guessed
 
 
+Providing visual feedback to the user using print("Word guessed by far: ", " ".join(self.word_guessed))--->joins the elements of the list self.word)guessed into a single string with spaces between each character.
+
+- self.word_guessed --->The list holds the current state of the word_guessed with correctly guessed letters at their respective positions and "_" underscores for letters that have not been guessed yet.
+
+## Example
+
+If the word to guess is "apple", user guess is "p" then the self.word_guessed is initialised to ["_", "p", "p", "_", "_"] . With "_".join(self.word_guessed) it prints out as Word guessed by far:  _ p p _ _
+
+This line provides immediate visual feedback to the player about their progress. It joins the elements from the list into a string with spaces between elemets 
 
 

@@ -125,8 +125,8 @@ Providing visual feedback to the user using print("Word guessed by far: ", " ".j
 
 ## Example
 
-If the word to guess is "apple", user guess is "p" then the self.word_guessed is initialised to ["_", "p", "p", "_", "_"] . With "_".join(self.word_guessed) it prints out as Word guessed by far:  _ p p _ _
+If the word to guess is "apple", user guess is "p" then the self.word_guessed is initialised to ["-", "p", "p", "-", "-"] . With "_".join(self.word_guessed) it prints out as word guessed by far:  _ p p _ _
 
-This line provides immediate visual feedback to the player about their progress. It joins the elements from the list into a string with spaces between elemets 
+This line provides immediate visual feedback to the player about their progress. It joins the elements from the list into a string with spaces between elements. 
 
 

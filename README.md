@@ -90,6 +90,32 @@ Condition : if letter == guess is True for indices i =1 and i = 2. The guessed l
 This line decreases the count of unique letters that are still left to guess.It helps keeping track of the players progress towards completing the word.
 
 ## EXAMPLE
+1. ### Initialization :
+- Suppose the word guessed is "apple"
+- Then self.word is "apple"
+- self.num_letters = 4 (number of unique letters are 4)
+
+2. ### Players guess:
+- Player guesses the letter "p"
+- That means guess = p
+
+3. ### Check if letter is in the word:
+- We check if the letter is in the word at /if guess in self.word/ line of code.In this  case where user guess is "p", condition evaluates as True because "p" is in the word "apple".
+
+4. ### Update word_guessed:
+- The loop (for i, letter in enumerate(self.word)) checks each letter in the word "apple" and then updates the self.word_guessed exactly at the index where letter matches "p".
+
+- self.word_guessed will look like this after the users guess --> ["_","p","p","_","_"]
+
+5. ### Update num_letters:
+- self.num_letters -->decrease self.num_letters by 1
+
+Before this line, self.num_letters was 4, after this line self.num_letters becomes 3
+
+#### Use of decreasing self.num_letters is tracking the progress of the users as in how many unique letters the user still needs to guess.It gives an inidication of how close the user is to winning the game.
+
+#### When self.num_letters reaches 0 , means that the player has guessed all unique letters in the word and the user has won the game.
+
 
 
 

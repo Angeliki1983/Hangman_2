@@ -24,8 +24,11 @@ class Hangman:
             self.num_lives -= 1
             print(f"Sorry, {guess} is not in the word.")
             print(f"You have {self.num_lives} lives left.")
-
-
+        self.word_guessed_displayed()
+        
+    def word_guessed_displayed(self):
+        print("Word guessed by far:", " ".join(self.word_guessed))
+        
 
     def ask_for_input(self):#Task 2/Step 2
         while True:#1

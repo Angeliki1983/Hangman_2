@@ -65,7 +65,7 @@ class Hangman:
 word_list = ["apple", "banana","cherry","kiwi", "orange"]
 
 game = Hangman(word_list)
-game.ask_for_input() 
+
 
     
 

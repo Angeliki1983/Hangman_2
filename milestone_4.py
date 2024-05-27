@@ -1,6 +1,10 @@
 import random
 class Hangman:
+    
     def __init__(self, word_list, num_lives=5):#Mileston4/Task1/Step1,2,3
+        """ Initializes new instance of the Hangman Game. Args --->word_list(is a list) : a list of words to chose from the game
+        num_lives --> number of lives the player has defaults to 5"""
+          
         self.word = random.choice(word_list) #1
         self.word_guessed = ["_" for _ in self.word ]#2
         self.num_letters = len(set(self.word))#3
@@ -11,6 +15,8 @@ class Hangman:
 #milestone 4/Task 2/Step 1
 
     def check_guess(self,guess):
+        """Handling case insensive letters ,checks if the guessed letter is in the word. Updates the game accordingly.
+        guess argument--> is the letter guessed"""
         guess = guess.lower()
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
@@ -27,10 +33,12 @@ class Hangman:
         self.word_guessed_displayed()
         
     def word_guessed_displayed(self):
+        """Provides visual display of the letters guessed in the randomly guessed word by far"""
         print("Word guessed by far:", " ".join(self.word_guessed))
         
 
     def ask_for_input(self):#Task 2/Step 2
+        """Prompts the player to guess a letter and then handles input validation"""
         while True:#1
             guess = input("Guess a letter: ")#2
             if len(guess) != 1 or not guess.isalpha():

@@ -46,26 +46,25 @@ class Hangman:
                 self.check_guess(guess)
 
 #Step 1 Create a function called play_game that takes word_list as a parameter
-    def play_game(self, word_list):
+def play_game(self, word_list):
         # Create a variable called num_lives and assign it to 5
-        num_lives = 5 # 1
-        game = Hangman(word_list, num_lives) # 2,3
+    num_lives = 5 # 1
+    game = Hangman(word_list, num_lives) # 2,3
 
-        while True:
-            if game.num_lives == 0:
-                print("You lost!")
-            elif game.num_letters > 0:
-                game.ask_for_input()
-            else:
-                print("You won the game!")
+    while True:
+        if game.num_lives == 0:
+            print("You lost!")
+        elif game.num_letters > 0:
+            game.ask_for_input()
+        else:
+            print("You won the game!")
                       
 
 
 
 word_list = ["apple", "banana","cherry","kiwi", "orange"]
 
-game = Hangman(word_list)
-
+play_game(word_list)
 
     
 

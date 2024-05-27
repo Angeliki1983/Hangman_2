@@ -35,7 +35,7 @@ class Hangman:
 
     def ask_for_input(self):
         """Prompts the player to guess a letter and then handles input validation"""
-        while True:#1
+        while True:
             guess = input("Guess a letter: ")
             if len(guess) != 1 or not guess.isalpha():
                 print("Invalid letter. Please, enter a single alphabetical character.")
@@ -47,28 +47,21 @@ class Hangman:
 
 #Step 1 Create a function called play_game that takes word_list as a parameter
 def play_game(word_list):
-        # Create a variable called num_lives and assign it to 5
-    num_lives = 5 # 1
-    game = Hangman(word_list, num_lives) # 2,3
+    num_lives = 5 
+    game = Hangman(word_list, num_lives) 
 
-    while True:
-        if game.num_lives == 0:
-            print("You lost!")
-            break
-        elif game.num_letters > 0:
-            game.ask_for_input()
-        else:
-            print("You won the game!")
-            break
-                      
+    while game.num_letters > 0 and game.num_lives > 0:
+        game.ask_for_input()
 
+    if game.num_lives <= 0:
+        print("You lost!")
+    else:
+        print("You won the game!")
 
 
 word_list = ["apple", "banana","cherry","kiwi", "orange"]
 
 play_game(word_list)
-
-    
 
 
 

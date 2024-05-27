@@ -59,6 +59,7 @@ def play_game(word_list):
             game.ask_for_input()
         else:
             print("You won the game!")
+            break
                       
 
 

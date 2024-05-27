@@ -20,7 +20,6 @@ class Hangman:
                 #updating word_guessd_list with the correctly guessed letter
                     self.word_guessed[i] =guess ## Replace the corresponding "_" in word_guessed with the guessed letter
             self.num_letters -= 1 #decrease the number of guessed letters left to guess/reduce the variable num_letters by 1
-            print("Word guessed so far:", " ".join(self.word_guessed))#print current state of word guessed so far/visual feedback
         else:#milestone4 4/Task 4/step 1 & 2
             self.num_lives -= 1
             print(f"Sorry, {guess} is not in the word.")

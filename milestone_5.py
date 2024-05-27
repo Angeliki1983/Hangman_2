@@ -54,6 +54,7 @@ def play_game(word_list):
     while True:
         if game.num_lives == 0:
             print("You lost!")
+            break
         elif game.num_letters > 0:
             game.ask_for_input()
         else:

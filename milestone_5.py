@@ -42,8 +42,9 @@ class Hangman:
             elif guess in self.list_of_guesses:
                 print("You've already tried that letter!")
             else:
-                self.list_of_guesses.append(guess) 
+                self.list_of_guesses.append(uess) 
                 self.check_guess(guess)
+                break
 
 #Step 1 Create a function called play_game that takes word_list as a parameter
 def play_game(word_list):

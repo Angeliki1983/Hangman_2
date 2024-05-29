@@ -4,17 +4,10 @@ The Hangman Game:
 This project is part of an exercise in AI Core designed to help learners practice fundamental Python concepts while also gaining familiarity with Git and GitHub. Hangman is a timeless game where one player selects a word and the other player attempts to guess it within a limited number of tries. In this implementation, the computer selects a word and the user endeavors to guess it.
 
 
-1. [Overview of Hangman Game](#overview-of-hangman-game)
-2. [Technologies Used](#technologies-used)
-3. [Installation Instructions](#installation-instructions)
-4. [Usage Instructions](#usage-instructions)
-5. [File Structure of the Project](#file-structure-of-the-project)
-6. [License Information](#license-information)
-7. [What I've Learned](#what-ive-learned)
-   - [Milestone 1 & 2 & 3](#milestone-1--2--3)
-   - [Milestone 3](#milestone-3)
-   - [Milestone 4](#milestone-4)
-8. [Recommended Improvements](#recommended-improvements)
+# Table of Contents:
+
+Overview of Hangman Game
+Hangman is a classic word-guessing game where one player thinks of a word and the other player attempts to guess it within a limited number of tries.
 
 # Technologies Used:
 - Python
@@ -141,6 +134,6 @@ This line provides immediate visual feedback to the player about their progress.
 Task provides a list of recommended improvements such us:
 
 - Meaningfull naming -->At this point, I have not yet made any changes
-- Eliminate code dublication--> Removed print statement print(input("Word guessed by far: :") " ".join(self.word_guessed)), which provides a visual display of the letters guessed by far and the letter not yet guessed (replaced by underscores) from check_guess method and extracted the logic in a new separate method called "word_guessed_display".  
+- Eliminate code dublication--> Removed print statement print(input("Word guessed by far: :") " ".join(self.word_guessed)), which provides a visual display of the letters guessed by far and the letter not yet guessed (replaced by underscores) from check_guess method and extracted the logic created a separate method called "word_guessed_display".  
 
 

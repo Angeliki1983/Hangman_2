@@ -134,6 +134,6 @@ This line provides immediate visual feedback to the player about their progress.
 Task provides a list of recommended improvements such us:
 
 - Meaningfull naming -->At this point, I have not yet made any changes
-- Eliminate code dublication--> Removed print statement print(input("Word guessed by far: :") " ".join(self.word_guessed)), which provides a visual display of the letters guessed by far and the letter not yet guessed (replaced by underscores) from check_guess method and extracted the logic of it in a new created method called "word_guessed_display".  
+- Eliminate code dublication--> Removed print statement print(input("Word guessed by far: :") " ".join(self.word_guessed)), which provides a visual display of the letters guessed by far and the letter not yet guessed (replaced by underscores) from check_guess method and extracted the logic in a new separate method called "word_guessed_display".  
 
 

@@ -179,7 +179,7 @@ This line decreases the count of unique letters that are still left to guess.It 
 
 - The loop (for i, letter in enumerate(self.word)) checks each letter in the word "apple" and then updates the self.word_guessed exactly at the index where letter matches "p".
 
-- self.word_guessed will look like this after the users guess --> ["_","p","p","_","_"]
+- self.word_guessed will look like this after the users guess --> ["-","p","p","-","-"]
 
 5. ### Update num_letters
 
@@ -187,19 +187,21 @@ This line decreases the count of unique letters that are still left to guess.It 
 
 Before this line, self.num_letters was 4, after this line self.num_letters becomes 3
 
-#### Use of decreasing self.num_letters is tracking the progress of the users as in how many unique letters the user still needs to guess.It gives an inidication of how close the user is to winning the game
+## Use of decreasing self.num_letters
+
+is tracking the progress of the users as in how many unique letters the user still needs to guess. It gives an indication of how close the user is to winning the game.
 
 #### When self.num_letters reaches 0 , means that the player has guessed all unique letters in the word and the user has won the game
 
 ## Showing current state of the word guessed
 
-Providing visual feedback to the user using print("Word guessed by far: ", " ".join(self.word_guessed))--->joins the elements of the list self.word)guessed into a single string with spaces between each character.
+Providing visual feedback to the user using print("Word guessed by far: ", " ".join(self.word_guessed))--->joins the elements of the list self.word guessed into a single string with spaces between each character.
 
 - self.word_guessed --->The list holds the current state of the word_guessed with correctly guessed letters at their respective positions and "_" underscores for letters that have not been guessed yet.
 
 ## Example
 
-If the word to guess is "apple", user guess is "p" then the self.word_guessed is initialised to ["-", "p", "p", "-", "-"] . With "_".join(self.word_guessed) it prints out as word guessed by far:_ p p __
+If the word to guess is "apple", user guess is "p" then the self.word_guessed is initialised to ["-", "p", "p", "-", "-"] . With "_".join(self.word_guessed) it prints out as word guessed by far: _ p p _ _
 
 This line provides immediate visual feedback to the player about their progress. It joins the elements from the list into a string with spaces between elements.
 

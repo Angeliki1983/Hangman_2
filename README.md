@@ -54,6 +54,13 @@ It is good practice to create a virtual enviroment for your project to manage de
 python your_folders_name.py
 ```
 
+Click on the link below for more information on how to download a github repository in your local machine:
+ ```bash
+ https://www.youtube.com/watch?v=ZFFtMyOFPe8&ab_channel=InfiniteCodes
+ ```
+
+  
+
 # What I ve learned/revised:
 
 ## Milestone 1 & 2 & 3 :

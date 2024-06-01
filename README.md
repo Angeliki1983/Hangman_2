@@ -10,12 +10,12 @@ This project is part of an exercise in AI Core designed to help learners practic
 1. [Overview of Hangman Game](#overview-of-hangman-game)
 2. [Technologies Used](#technologies-used)
 3. [Installation Instructions](#installation-instructions)
-4. [Usage Instructions](#usage-instructions)
 5. [File Structure of the Project](#file-structure-of-the-project)
 6. [What I have learned/revised](#what-i-have-learned/revised)
-   - [Milestone 1 & 2 & 3](#milestone-1--2--3)
+   - [Milestone 1 & 2](#milestone-1--2)
    - [Milestone 3](#milestone-3)
    - [Milestone 4](#milestone-4)
+   - [Milestone 5](#milestone-5)
 7. [Recommended Improvements](#recommended-improvements)
 
 # Technologies Used:

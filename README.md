@@ -211,3 +211,27 @@ Task provides a list of recommended improvements such us:
 
 - Meaningfull naming -->At this point, I have not yet made any changes
 - Eliminate code dublication--> Removed print statement print(input("Word guessed by far: :") " ".join(self.word_guessed)), which provides a visual display of the letters guessed by far and the letter not yet guessed (replaced by underscores) from check_guess method and extracted the logic created a separate method called "word_guessed_display".  
+
+## Milestone 5
+- Task1/Step 1 &2 : 
+
+Following exact instructions given by Step 1 and Step 2, I faced the problem where the game continued asking for an input after the number of lives reached zero. To fix this I had to add a "break" condition to break out of the loop when the game is over.
+
+The flow before adding the "break"statement was causing the problem:
+
+## Method: `ask_for_input`
+
+
+```python
+def ask_for_input(self):
+    """Prompts the player to guess a letter and then handles input validation"""
+    while True:  #1
+        guess = input("Guess a letter: ")
+        if len(guess) != 1 or not guess.isalpha():
+            print("Invalid letter. Please, enter a single alphabetical character.")
+        elif guess in self.list_of_guesses:
+            print("You've already tried that letter!")
+        else:
+            self.list_of_guesses.append(guess)
+            self.check_guess(guess)
+```

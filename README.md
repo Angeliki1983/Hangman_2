@@ -63,7 +63,7 @@ Click on the link below for more information on how to download a github reposit
 
 # What I ve learned/revised:
 
-## Milestone 1 & 2 & 3 :
+## Milestone 1 & 2:
 
 - Import module random -->Function that is used to generate random items form sequences , with dot operator to acces its functions.In this case we used random.choice function that selects a random item form the sequence of favourite fruits.
 - input() function-->that takes input from the screen, returning the input in form of a string

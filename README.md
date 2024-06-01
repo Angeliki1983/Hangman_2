@@ -1,13 +1,22 @@
+
 # Introduction
 The Hangman Game: 
 
-This project is part of an exercise in AI Core designed to help learners practice fundamental Python concepts while also gaining familiarity with Git and GitHub. Hangman is a timeless game where one player selects a word and the other player attempts to guess it within a limited number of tries. In this implementation, the computer selects a word and the user endeavors to guess it.
+This project is part of an exercise in AI Core designed to help learners practice fundamental Python concepts while also gaining familiarity with Git and GitHub. Hangman is a timeless game where one player selects a word(in this case this word is generated using import module, function "choice") and the other player attempts to guess it within a limited number of tries. In this implementation, the computer selects a word and the user endeavors to guess it.
 
 
 # Table of Contents:
 
-Overview of Hangman Game
-Hangman is a classic word-guessing game where one player thinks of a word and the other player attempts to guess it within a limited number of tries.
+1. [Overview of Hangman Game](#overview-of-hangman-game)
+2. [Technologies Used](#technologies-used)
+3. [Installation Instructions](#installation-instructions)
+4. [Usage Instructions](#usage-instructions)
+5. [File Structure of the Project](#file-structure-of-the-project)
+6. [What I have learned/revised](#what-i-have-learned/revised)
+   - [Milestone 1 & 2 & 3](#milestone-1--2--3)
+   - [Milestone 3](#milestone-3)
+   - [Milestone 4](#milestone-4)
+7. [Recommended Improvements](#recommended-improvements)
 
 # Technologies Used:
 - Python
@@ -15,10 +24,13 @@ Hangman is a classic word-guessing game where one player thinks of a word and th
 - GitHub
 
 ---
-- Installation instructions:---> To be updatedclone repo from my account to your local memory-->provide instructions
-- Usage instructions :--->To be updated
-- File structure of the project --->to be updated
-- License information
+# Installation instructions:
+
+**Clone the repository**: First, clone the repository from Github to yout local machine.
+```bash
+https://github.com/Angeliki1983/Hangman_2.git
+```
+
 
 # What I ve learned/revised:
 

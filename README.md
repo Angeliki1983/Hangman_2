@@ -220,6 +220,7 @@ Following exact instructions given by Step 1 and Step 2, I faced the problem whe
 The flow before adding the "break"statement was causing the problem:
 
 ## Method: `ask_for_input`
+### Flow without `break`:
 
 
 ```python
@@ -235,3 +236,17 @@ def ask_for_input(self):
             self.list_of_guesses.append(guess)
             self.check_guess(guess)
 ```
+1. <b> Infinite loop: </b> The  `while true` creates an infinite loop, meaning it will continuously prompt the user to enter a letter.
+2. <b> Input Validation: </b> Each iteration checks the validity of the input. If the input is invalid (not a single alphabetical character), it prompts the user again. If the input is already been guessed, it notifies the user they have already tried the letter.
+
+If the "elif" block is not True(The letter guessed is not in the list of guesses then the next block is run  adding the guessed letter in the list of guessed letters(`self.list_of_guesses.append(guess)`), then running the `self.check_guesses(guess)` method to process the guess.
+
+3. <b>Correct Input: </b> When valid and new letter is guessed it adds the guess to `self.list_of_guesses` and then calls the `self.check_guess` to proccess the guess.
+
+## Issue 
+After proccessing the guess the loop continues , it does not exit and will prompt the user guess immediately. The issue without the break statemtn is that it continues prompting the user after even a valid guess, and it will keep asking for guesses regardless of the game state. There is no  `break` condition to to exit the loop when the player has guesssed correctly or when the player has run out of lives within the `ask_for_input` method.
+
+### Flow with  `break`:
+
+Steps 1, 2, 3 above are the same. The difference is after processing the guess the `break` statement exits the loop, returning control back to the calling function `play_game`
+

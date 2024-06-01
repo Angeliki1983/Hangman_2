@@ -48,6 +48,10 @@ class Hangman:
 
 #Step 1 Create a function called play_game that takes word_list as a parameter
 def play_game(word_list):
+    """Starts and manages the Hangman Game
+    Args:
+    word_list(list):A list of words to chose from the game"""
+    
     num_lives = 5 
     game = Hangman(word_list, num_lives) 
 

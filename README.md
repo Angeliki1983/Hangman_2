@@ -26,11 +26,33 @@ This project is part of an exercise in AI Core designed to help learners practic
 ---
 # Installation instructions:
 
-**Clone the repository**: First, clone the repository from Github to yout local machine.
+**Clone the repository**: First, clone the repository from Github to your local machine. You can find more information by clicking on the link below:
 ```bash
-https://github.com/Angeliki1983/Hangman_2.git
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+```
+You can also find a lot of relevant videos on Youtube on how to do that:
+```bash
+https://www.youtube.com/results?search_query=how+to+clone+a+repo+from+github+to+local+machine
+```
+**Navigate to the project directory:**
+Move into the directory where the repository was cloned:
+    ```
+    cd your_folders'name
+    ```
+
+**Install dependancies:** Install the necessary packages using "pip".
+
+```
+pip install -r requirements.txt
 ```
 
+**Recommended** :
+It is good practice to create a virtual enviroment for your project to manage dependancies. Consider the operating system you are on (Windows or Macos/Linux) then activate the virtual enviroment using the relevant command.
+
+**Run the game** :
+ ```
+python your_folders_name.py
+```
 
 # What I ve learned/revised:
 

@@ -83,56 +83,22 @@ Click on the link below for more information on how to download a github reposit
 ```
 touch newfile.txt
 ```
+
 - **Modifying Markdown Files in Visual Studio Code.**
 
 You can find more information by clicking at the link below:
+
 ```
 https://code.visualstudio.com/Docs/languages/markdown
 ```
+
 or on several different Youtube videos.One of them I found particularly useful:
+
 ```
 https://www.youtube.com/watch?v=DLLrcr9u_XI&ab_channel=DeAndreQueary
 ```
 
-- **Pushing Changes to GitHub.**
-
-To push changes to GitHub using the integrated terminal in Visual Studio Code, follow these steps:
-
-1. **Open the Terminal**:
-   - Open Visual Studio Code.
-   - Open the integrated terminal by selecting `View` > `Terminal` from the top menu or by pressing `` Ctrl+` ``.
-
-2. **Stage All Changes**:
-   - In the terminal, stage all changes by using the `git add` command:
-     ```sh
-     git add .
-     ```
-
-3. **Commit Changes with a Message**:
-   - Commit the staged changes with a meaningful message:
-     ```sh
-     git commit -m "Updated README.md"
-     ```
-
-4. **Push Changes to the Remote Repository**:
-   - Push the committed changes to the remote repository on GitHub:
-     ```sh
-     git push origin main
-     ```
-
-## Example
-
-```sh
-# Stage all changes
-git add .
-
-# Commit changes with a message
-git commit -m "Updated README.md"
-
-# Push changes to the remote repository
-git push origin main
-- Simplify logic by moving code blocks by encapsulating the logical repetition into a single function
-- Apply basic Python Syntax including variable assignment, list creating, modules, using loops(while),condition statements(if-else), list manipulation(using random.choice to select a word from the list),string manipulation(checking if a character is present in a string), Conditional logic(using if-else statements),loop control (continues user input until valid input is provided)
+- Apply basic Python Syntax including variable assignment, list creating, modules, using loops(while),condition statements(if-else), list manipulation(using random.choice to select a word from the list),string manipulation(checking if a character is present in a string), Conditional logic(using if-else statements),loop control (using "while True" continues asking for user input until valid input is provided)
 
 ## Milestone 3
 

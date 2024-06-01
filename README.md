@@ -104,7 +104,6 @@ https://www.youtube.com/watch?v=DLLrcr9u_XI&ab_channel=DeAndreQueary
 
 - Function definition and parameter passing:Defining functions allow us to encapsulate blocks of code for reusability and organisation.The parameter passing mechanism allow us to pass data into functions making them more versatile
 - String manipulation:Converting strings into lower case using lower() method
-- Gaining familiarity with common programming constructs
 - Calling functions in this case ask_for_input() and check_guess -->contains the main logic of the game prompting the user for input and cheking their guesses
 
 ## Milestone 4

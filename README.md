@@ -71,7 +71,7 @@ Click on the link below for more information on how to download a github reposit
  https://www.youtube.com/watch?v=ZFFtMyOFPe8&ab_channel=InfiniteCodes
  ```
 
-# What I ve learned/revised
+# What I' ve learned/revised:
 
 ## Milestone 1 & 2
 

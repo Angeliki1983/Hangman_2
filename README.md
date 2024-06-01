@@ -212,8 +212,8 @@ Task provides a list of recommended improvements such us:
 - Meaningfull naming -->At this point, I have not yet made any changes
 - Eliminate code dublication--> Removed print statement print(input("Word guessed by far: :") " ".join(self.word_guessed)), which provides a visual display of the letters guessed by far and the letter not yet guessed (replaced by underscores) from check_guess method and extracted the logic created a separate method called "word_guessed_display".  
 
-## Milestone 5
-- Task1/Step 1 &2 : 
+# Milestone 5
+### Task1/Step 1 &2 : 
 
 Following exact instructions given by Step 1 and Step 2, I faced the problem where the game continued asking for an input after the number of lives reached zero. To fix this I had to add a "break" condition to break out of the loop when the game is over.
 
@@ -250,3 +250,5 @@ After proccessing the guess the loop continues , it does not exit and will promp
 
 Steps 1, 2, 3 above are the same. The difference is after processing the guess the `break` statement exits the loop, returning control back to the calling function `play_game`
 
+
+# 
